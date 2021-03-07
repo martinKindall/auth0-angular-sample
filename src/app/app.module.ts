@@ -21,6 +21,8 @@ import { environment as env } from '../environments/environment';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
 import { SignupButtonComponent } from './components/signup-button/signup-button.component';
 import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
+import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
+import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { LogoutButtonComponent } from './components/logout-button/logout-button.
     LoginButtonComponent,
     SignupButtonComponent,
     LogoutButtonComponent,
+    AuthenticationButtonComponent,
+    AuthNavComponent,
   ],
   imports: [
     BrowserModule,
