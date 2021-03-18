@@ -52,9 +52,9 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
     FontAwesomeModule,
     AuthModule.forRoot({
       ...env.auth,
-      scope: 'product:read',
+      scope: 'messages:read',
       httpInterceptor: {
-        allowedList: [`${env.dev.serverUrl}/order-composite/*`],
+        allowedList: [`${env.dev.serverUrl}/private-scoped`],
       },
     }),
   ],

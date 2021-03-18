@@ -20,7 +20,7 @@ export class ExternalApiComponent implements OnInit {
 
   callSecureApi(): void {
     this.http
-      .get(`${env.dev.serverUrl}/order-composite/10`)
+      .get(`${env.dev.serverUrl}/private-scoped`)
       .subscribe((result: Message) => {
         this.description = result.description;
       });
